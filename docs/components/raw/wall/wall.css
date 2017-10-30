@@ -3,7 +3,6 @@
  */
 
 .wall__container {
-    background: url('/images/grid-background.png');
     height: 497px;
     position: relative;
     width: 100%;
