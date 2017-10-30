@@ -1,0 +1,40 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <link media="all" rel="stylesheet" href="../../css/master.min.css">
+  <title>Wall: Default</title>
+</head>
+<body>
+
+<div class="wall">
+    <div class="wall__container">
+        <div class="wall__draggable">
+            <div class="wall__draggable-inner">
+                <p class="wall__draggable-content">Drag me!</p>
+            </div>
+        </div>
+    </div>
+    <div class="wall__actions">
+        <button class="button ">Add 10x15</button>
+        <button class="button ">Add 13x18</button>
+        <button class="button ">Add 15x15</button>
+        <button class="button ">Add 15x21</button>
+        <button class="button ">Add 18x24</button>
+    </div>
+</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        $(".wall__draggable").draggable({
+            grid: [ 1, 1 ],
+            containment: "parent"
+        });
+    });
+</script>
+
+</body>
+<script src="../../scripts/vendor.min.js"></script>
+</html>

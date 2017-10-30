@@ -3,10 +3,11 @@
 */
 
 :root{
-	--text-image-section-padding: 40px;
+    --image-text-section-padding: 40px;
+    --image-text-background-color: var(--color-gray-light);
 }
 
 .text-image-section {
-    padding: var(--text-image-section-padding);
+    background-color: var(--image-text-background-color);
+    padding: var(--image-text-section-padding);
 }
-

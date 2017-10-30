@@ -8,8 +8,10 @@
 
 
 .nav-main {
-    @media (--viewport-md-min) {
-        display: none;
+    display: none;
+
+    @media (--viewport-sm-min) {
+        display: block;
     }
 }
 
