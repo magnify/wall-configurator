@@ -172,26 +172,36 @@
     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"grid-container grid-container--full-width"</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wall"</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wall__container"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wall__draggable"</span>&gt;</span>
-                    <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wall__draggable-inner"</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">p</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wall__draggable-content"</span>&gt;</span>Drag me!<span class="hljs-tag">&lt;/<span class="hljs-name">p</span>&gt;</span>
-                    <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
-                <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"wall__actions"</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>Add 10x15<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>Add 13x18<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>Add 15x15<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>Add 15x21<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
-                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span>&gt;</span>Add 18x24<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"10x15"</span> <span class="hljs-attr">data-draggable-width</span>=<span class="hljs-string">"100"</span> <span class="hljs-attr">data-draggable-height</span>=<span class="hljs-string">"150"</span>&gt;</span>Add 10x15<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"13x18"</span> <span class="hljs-attr">data-draggable-width</span>=<span class="hljs-string">"130"</span> <span class="hljs-attr">data-draggable-height</span>=<span class="hljs-string">"180"</span>&gt;</span>Add 13x18<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"15x15"</span> <span class="hljs-attr">data-draggable-width</span>=<span class="hljs-string">"150"</span> <span class="hljs-attr">data-draggable-height</span>=<span class="hljs-string">"150"</span>&gt;</span>Add 15x15<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Add 15x21"</span> <span class="hljs-attr">data-draggable-width</span>=<span class="hljs-string">"150"</span> <span class="hljs-attr">data-draggable-height</span>=<span class="hljs-string">"210"</span>&gt;</span>Add 15x21<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+                <span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">class</span>=<span class="hljs-string">"button "</span> <span class="hljs-attr">id</span>=<span class="hljs-string">"Add 18x24"</span> <span class="hljs-attr">data-draggable-width</span>=<span class="hljs-string">"180px"</span> <span class="hljs-attr">data-draggable-height</span>=<span class="hljs-string">"240"</span>&gt;</span>Add 18x24<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
 
         <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
             <span class="hljs-built_in">document</span>.addEventListener(<span class="hljs-string">"DOMContentLoaded"</span>, <span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params">event</span>) </span>{
-                $(<span class="hljs-string">".wall__draggable"</span>).draggable({
-                    <span class="hljs-attr">grid</span>: [<span class="hljs-number">1</span>, <span class="hljs-number">1</span>],
-                    <span class="hljs-attr">containment</span>: <span class="hljs-string">"parent"</span>
+                <span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">addDraggable</span>(<span class="hljs-params">width, height, content</span>) </span>{
+                    <span class="hljs-keyword">var</span> $draggable = $(
+                        <span class="hljs-string">'&lt;div class="wall__draggable" style="width: '</span> + width + <span class="hljs-string">'px; height: '</span> + height + <span class="hljs-string">'px;"&gt;'</span> +
+                        <span class="hljs-string">'&lt;div class="wall__draggable-inner"&gt;'</span> +
+                        <span class="hljs-string">'&lt;p class="wall__draggable-content"&gt;'</span> + content + <span class="hljs-string">'&lt;/p&gt;'</span> +
+                        <span class="hljs-string">'&lt;/div&gt;'</span> +
+                        <span class="hljs-string">'&lt;/div&gt;'</span>);
+                    <span class="hljs-comment">// draggable</span>
+                    $(<span class="hljs-string">".wall__container"</span>).append($draggable);
+                    <span class="hljs-comment">//make it "draggable" and "resizable"</span>
+                    $draggable.draggable({
+                        <span class="hljs-attr">grid</span>: [<span class="hljs-number">5</span>, <span class="hljs-number">5</span>],
+                        <span class="hljs-attr">scroll</span>: <span class="hljs-literal">true</span>,
+                        <span class="hljs-attr">containment</span>: <span class="hljs-string">"parent"</span>
+                    });
+                }
+                $(<span class="hljs-string">'.button'</span>).click(<span class="hljs-function"><span class="hljs-keyword">function</span>(<span class="hljs-params"></span>) </span>{
+                    addDraggable($(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">'data-draggable-width'</span>), $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">'data-draggable-height'</span>), $(<span class="hljs-keyword">this</span>).attr(<span class="hljs-string">'id'</span>));
                 });
             });
         </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
@@ -411,6 +421,30 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="button--large.html" data-pjax>
                 <span>Large</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #FF3333;" title="Prototype"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="button--draggable.html" data-pjax>
+                <span>Draggable</span>
                 
 
 <div class="Status Status--unlabelled">

@@ -21,27 +21,41 @@
 <div class="grid-container grid-container--full-width">
         <div class="wall">
     <div class="wall__container">
-        <div class="wall__draggable">
-            <div class="wall__draggable-inner">
-                <p class="wall__draggable-content">Drag me!</p>
-            </div>
-        </div>
     </div>
     <div class="wall__actions">
-        <button class="button ">Add 10x15</button>
-        <button class="button ">Add 13x18</button>
-        <button class="button ">Add 15x15</button>
-        <button class="button ">Add 15x21</button>
-        <button class="button ">Add 18x24</button>
+        <button class="button " id="10x15" data-draggable-width="100" data-draggable-height="150">Add 10x15</button>
+        <button class="button " id="13x18" data-draggable-width="130" data-draggable-height="180">Add 13x18</button>
+        <button class="button " id="15x15" data-draggable-width="150" data-draggable-height="150">Add 15x15</button>
+        <button class="button " id="Add 15x21" data-draggable-width="150" data-draggable-height="210">Add 15x21</button>
+        <button class="button " id="Add 18x24" data-draggable-width="180px" data-draggable-height="240">Add 18x24</button>
     </div>
 </div>
 
 <script>
     document.addEventListener("DOMContentLoaded", function(event) {
-        $(".wall__draggable").draggable({
-            grid: [ 1, 1 ],
-            containment: "parent"
+        function addDraggable(width, height, content) {
+            var $draggable = $(
+                '<div class="wall__draggable" style="width: ' + width + 'px; height: ' + height + 'px;">' +
+                    '<div class="wall__draggable-inner">' +
+                        '<p class="wall__draggable-content">' + content + '</p>' +
+                    '</div>' +
+                '</div>');
+
+            // draggable
+            $(".wall__container").append($draggable);
+
+            //make it "draggable" and "resizable"
+            $draggable.draggable({
+                grid: [5, 5],
+                scroll: true,
+                containment: "parent"
+            });
+        }
+
+        $('.button').click(function() {
+            addDraggable($(this).attr('data-draggable-width'), $(this).attr('data-draggable-height'), $(this).attr('id'));
         });
+
     });
 </script>
 </div>
