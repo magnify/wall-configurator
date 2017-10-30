@@ -1,0 +1,34 @@
+/*
+ * Component: Wall
+ */
+
+.wall__container {
+    background: url('/images/grid-background.png');
+    height: 497px;
+    position: relative;
+    width: 100%;
+}
+
+.wall__actions {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.wall__draggable {
+    background-color: white;
+    cursor: move;
+    height: 150px;
+    width: 150px;
+}
+
+.wall__draggable-inner {
+    align-items: center;
+    border: 3px solid black;
+    display: flex;
+    height: 100%;
+}
+
+.wall__draggable-content {
+    margin-left: auto;
+    margin-right: auto;
+}

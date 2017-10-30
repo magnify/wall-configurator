@@ -1,0 +1,14 @@
+{
+    "globals": {
+        "$": false,
+        "jQuery": false,
+        "svg4everybody": false,
+        "google": false,
+        "vue": false,
+        "angular": false
+    },
+    "globalstrict": true,
+    "browser": true,
+    "devel": true,
+    "supernew": true
+}

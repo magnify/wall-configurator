@@ -1,0 +1,18 @@
+/*
+ * Module: Topbar
+ */
+
+:root{
+    --topbar-background-color: var(--color-white);
+}
+
+
+.topbar {
+    background-color: var(--topbar-background-color);
+
+    &__inner {
+        padding-top: 40px;
+        padding-bottom: 40px;
+        text-align: center;
+    }
+}

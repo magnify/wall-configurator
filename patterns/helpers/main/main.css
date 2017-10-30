@@ -1,0 +1,7 @@
+/*
+ * Helpers: Main
+ */
+
+:root{
+	--main-site-width: var(--site-width);
+}
