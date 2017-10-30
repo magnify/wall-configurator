@@ -4,26 +4,41 @@
 	"context": {
         "add-10x15": {
             "button": {
+                "id": "10x15",
+                "data-draggable-width": "100",
+                "data-draggable-height": "150",
                 "text": "Add 10x15"
             }
         },
         "add-13x18": {
             "button": {
+                "id": "13x18",
+                "data-draggable-width": "130",
+                "data-draggable-height": "180",
                 "text": "Add 13x18"
             }
         },
         "add-15x15": {
             "button": {
+                "id": "15x15",
+                "data-draggable-width": "150",
+                "data-draggable-height": "150",
                 "text": "Add 15x15"
             }
         },
         "add-15x21": {
             "button": {
+                "id": "Add 15x21",
+                "data-draggable-width": "150",
+                "data-draggable-height": "210",
                 "text": "Add 15x21"
             }
         },
         "add-18x24": {
             "button": {
+                "id": "Add 18x24",
+                "data-draggable-width": "180px",
+                "data-draggable-height": "240",
                 "text": "Add 18x24"
             }
         }

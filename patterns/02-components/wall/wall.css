@@ -18,6 +18,9 @@
     background-color: white;
     cursor: move;
     height: 150px;
+    left: 50px;
+    position: absolute;
+    top: 50px;
     width: 150px;
 }
 

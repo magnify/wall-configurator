@@ -3,6 +3,7 @@
   "status": "prototype",
   "context": {
     "button": {
+      "id": "button",
       "text": "Button"
     }
   },
@@ -11,6 +12,7 @@
       "name": "ghost",
       "context": {
         "button": {
+          "id": "ghost-button",
           "text": "Ghost Button"
         }
       }
@@ -19,6 +21,7 @@
       "name": "large",
       "context": {
         "button": {
+          "id": "large-button",
           "text": "Large Button"
         }
       }
