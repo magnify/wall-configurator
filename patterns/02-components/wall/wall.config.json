@@ -28,7 +28,7 @@
         },
         "add-15x21": {
             "button": {
-                "id": "Add 15x21",
+                "id": "15x21",
                 "data-draggable-width": "150",
                 "data-draggable-height": "210",
                 "text": "Add 15x21"
@@ -36,7 +36,7 @@
         },
         "add-18x24": {
             "button": {
-                "id": "Add 18x24",
+                "id": "18x24",
                 "data-draggable-width": "180px",
                 "data-draggable-height": "240",
                 "text": "Add 18x24"
