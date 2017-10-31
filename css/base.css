@@ -1,0 +1,154 @@
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    background-color: #fff;
+    font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
+    font-weight: 400;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    color: #363636;
+    line-height: 1.5;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+@media (min-width: 1200px) {
+    body {
+        font-size: 18px
+    }
+}
+
+/* Links */
+a {
+    color: undefined;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: undefined;
+}
+
+a:focus {
+    color: undefined;
+}
+
+/* Image handling */
+figure {
+    margin: 0;
+    background-size: auto 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+figure img {
+    max-width: 100%;
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    transition: opacity 0.2s;
+}
+
+figure.contain-width img {
+    width: auto;
+}
+
+.grid-column {
+    flex-grow: 1;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+
+.grid-column + .grid-column {
+    margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+    .grid-column + .grid-column {
+        margin-top: 0
+    }
+}
+
+.grid-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.grid-container + .grid-container {
+    margin-top: 30px;
+}
+
+.grid-container--full-width {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.grid-container--site-width {
+    max-width: 1560px;
+}
+
+.grid-row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: 100%;
+}
+
+.grid-row + .grid-row {
+    margin-top: 30px;
+}
+
+.grid-row--two-columns > .grid-column {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .grid-row--two-columns > .grid-column {
+        width: calc(50% - 30px)
+    }
+}
+
+.grid-row--three-columns > .grid-column {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .grid-row--three-columns > .grid-column {
+        width: calc(33.33% - 30px)
+    }
+}
+
+.grid-row--two-third > .grid-column {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .grid-row--two-third > .grid-column {
+        width: calc(66.66% - 30px)
+    }
+}
+
+.grid-row--two-third > .grid-column:last-child {
+    width: 100%;
+}
+
+@media (min-width: 992px) {
+    .grid-row--two-third > .grid-column:last-child {
+        width: calc(33.33% - 30px)
+    }
+}
+
+
