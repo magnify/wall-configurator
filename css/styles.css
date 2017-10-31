@@ -70,21 +70,17 @@ draggable-frame,
 }
 
 .wall__container {
-    min-height: 750px;
+    min-height: 800px;
     overflow: scroll;
     position: relative;
     width: 100%;
 }
 
-@media screen and (orientation:landscape) {
+@media screen and (max-width: 1024px) and (orientation:landscape) {
     .wall__container {
         min-height: 520px;
         zoom: 75%;
     }
-}
-
-@media (min-width: 1025px) {
-
 }
 
 .wall__draggable-content {
