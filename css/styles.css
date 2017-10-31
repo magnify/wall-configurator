@@ -70,10 +70,17 @@ draggable-frame,
 }
 
 .wall__container {
-    min-height: 800px;
+    min-height: 750px;
     overflow: scroll;
     position: relative;
+    zoom: 50%;
     width: 100%;
+}
+
+@media (min-width: 1025px) {
+    .wall__container {
+        zoom: 100%;
+    }
 }
 
 .wall__draggable-content {
