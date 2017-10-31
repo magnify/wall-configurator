@@ -38,32 +38,42 @@
     outline: none;
 }
 
-.wall__container {
-    height: 497px;
-    position: relative;
-    width: 100%;
+.product-wrapper {
+    display: flex;
 }
 
-.wall__actions {
-    margin-top: 40px;
+.product {
+    cursor: pointer;
+}
+
+.product,
+.wall__draggable {
+    align-items: center;
+    background-color: #000;
+    display: flex;
+    font-size: 75%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+draggable-frame,
+.wall__draggable {
+    cursor: move;
+    position: absolute;
+}
+
+.product__inner,
+.wall__draggable-inner {
+    background-color: #fff;
+    margin: auto;
     text-align: center;
 }
 
-.wall__draggable {
-    background-color: white;
-    cursor: move;
-    height: 150px;
-    left: 50px;
-    position: absolute;
-    top: 50px;
-    width: 150px;
-}
-
-.wall__draggable-inner {
-    align-items: center;
-    border: 3px solid black;
-    display: flex;
-    height: 100%;
+.wall__container {
+    min-height: 800px;
+    overflow: scroll;
+    position: relative;
+    width: 100%;
 }
 
 .wall__draggable-content {

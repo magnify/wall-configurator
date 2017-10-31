@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="productApp">
 <head>
     <meta charset="utf-8">
     <link media="all" rel="stylesheet" href="css/base.css">
@@ -7,12 +7,12 @@
     <title>Wall Configurator</title>
     <link rel="shortcut icon" type="image/ico" href="images/favicon.ico">
 </head>
-<body>
+<body ng-controller="productControl">
 
 <header role="banner">
     <div class="topbar">
         <div class="grid-container grid-container--site-width">
-            <div class="grid-row ">
+            <div class="grid-row">
                 <div class="grid-column">
                     <div class="topbar__inner">
                         <img class="logo" src="images/logo.svg">
@@ -21,50 +21,33 @@
             </div>
         </div>
     </div>
-
 </header>
-
 <main class="main" role="main">
     <div class="grid-container grid-container--full-width">
         <div class="wall">
             <div class="wall__container" style="background: url(images/grid-background.png)">
-            </div>
-            <div class="wall__actions">
-                <button class="button " id="10x15" data-draggable-width="100" data-draggable-height="150">Add 10x15</button>
-                <button class="button " id="13x18" data-draggable-width="130" data-draggable-height="180">Add 13x18</button>
-                <button class="button " id="15x15" data-draggable-width="150" data-draggable-height="150">Add 15x15</button>
-                <button class="button " id="15x21" data-draggable-width="150" data-draggable-height="210">Add 15x21</button>
-                <button class="button " id="18x24" data-draggable-width="180px" data-draggable-height="240">Add 18x24</button>
+                <draggable-frame product="product" ng-repeat="product in selectedProducts track by $index">
+                </draggable-frame>
             </div>
         </div>
-
-        <script>
-            document.addEventListener("DOMContentLoaded", function(event) {
-                function addDraggable(width, height, content) {
-                    var $draggable = $(
-                        '<div class="wall__draggable" style="width: ' + width + 'px; height: ' + height + 'px;">' +
-                        '<div class="wall__draggable-inner">' +
-                        '<p class="wall__draggable-content">' + content + '</p>' +
-                        '</div>' +
-                        '</div>');
-                    // draggable
-                    $(".wall__container").append($draggable);
-                    //make it "draggable" and "resizable"
-                    $draggable.draggable({
-                        grid: [5, 5],
-                        scroll: true,
-                        containment: "parent"
-                    });
-                }
-                $('.button').click(function() {
-                    addDraggable($(this).attr('data-draggable-width'), $(this).attr('data-draggable-height'), $(this).attr('id'));
-                });
-            });
-        </script>
+    </div>
+    <div class="grid-container grid-container--site-width">
+        <div class="grid-row">
+            <div class="grid-column">
+                <div class="product-wrapper">
+                    <div class="product" ng-click="addItem(product)" ng-repeat="product in products | orderBy:'price'" style="width: {{ product.outerWidth }}px; height: {{ product.outerHeight }}px;">
+                        <div class="product__inner" style="width: {{ product.innerWidth }}px; height: {{ product.innerHeight }}px;">
+                            {{ product.title }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </main>
-
 </body>
+<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+<script src="scripts/controllers.js"></script>
 <script src="scripts/jquery.min.js"></script>
 <script src="scripts/jquery-ui.min.js"></script>
 </html>

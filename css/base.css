@@ -7,7 +7,10 @@
     box-sizing: border-box;
 }
 
-/* Body */
+html {
+    height: 100%;
+}
+
 body {
     background-color: #fff;
     font-family: 'Roboto', 'Helvetica', 'Arial', 'sans-serif';
@@ -17,6 +20,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     color: #363636;
     line-height: 1.5;
+    min-height: 100%;
     overflow-x: hidden;
     position: relative;
     width: 100%;
