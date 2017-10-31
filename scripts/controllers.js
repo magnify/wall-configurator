@@ -54,7 +54,7 @@ productApp.controller('productControl', function ($scope) {
     }
 })
     .component('draggableFrame', {
-        templateUrl: '/templates/draggable.template.html',
+        templateUrl: 'templates/draggable.template.html',
         controllerAs: 'ctrl',
         replace: true,
         bindings: {
