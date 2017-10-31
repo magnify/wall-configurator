@@ -1,0 +1,8 @@
+<div class="wall__draggable" ng-style="{'width': ctrl.outerWidth + 'px', 'height': ctrl.outerHeight + 'px' }">
+    <div class="wall__draggable-inner" ng-style="{'width': ctrl.innerWidth + 'px', 'height': ctrl.innerHeight + 'px' }">
+        <div class="wall__draggable-content">
+            {{ ctrl.product.title }} {{ ctrl.outerWidth }}
+            <button ng-click="ctrl.rotate()">Roter</button>
+        </div>
+    </div>
+</div>
